@@ -90,7 +90,7 @@ body {
 }
 #title::before {
     content: "";
-    background: url(../img/bg.jpg) no-repeat center center/cover;
+    background: url(../bg.jpg) no-repeat center center/cover;
     position: absolute;
     width: 100%;
     height: 85vh;
@@ -139,7 +139,7 @@ body {
 .services-container::before
 {
     content: "";
-    background-image: url(../img/servicesbg.jpg);
+    background-image: url(../servicesbg.jpg);
     opacity: 0.85;
     position: absolute;
     width: 100%;
