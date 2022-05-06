@@ -90,8 +90,8 @@ body {
 }
 #title::before {
     content: "";
-    /* background: url(../bg.jpg) no-repeat center center/cover; */
-    background-image: "../bg.jpg" no-repeat center center/cover;
+    background: url("https://github.com/Abhishek-Cypher/second-project/blob/main/bg.jpg") no-repeat center center/cover; 
+    /* HOW TO ADD URL OF IMAGE IN CSS FILE USING GITHUB */
     position: absolute;
     width: 100%;
     height: 85vh;
@@ -140,7 +140,7 @@ body {
 .services-container::before
 {
     content: "";
-    background-image: url(../servicesbg.jpg);
+    background-image: url("https://github.com/Abhishek-Cypher/second-project/blob/main/servicesbg.jpg");
     opacity: 0.85;
     position: absolute;
     width: 100%;
