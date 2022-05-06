@@ -1,0 +1,169 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* GIVING DEFAULT FONT TO WHOLE BODY */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+/* NAVBAR */
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/* NAVBAR : LOGO */
+#logo {
+    margin: 5px;
+    padding: 10px;
+}
+
+#logo img {
+    height: 50px;
+    /* giving only height and not width will make width accordingly of aspect ratio */
+}
+
+/* NAVBAR : CENTER ITEMS */
+#navbar {
+    position: sticky;
+    top: 0px;
+}
+
+#navbar ul {
+    display: flex;
+    width: 33%;
+    margin: 0px auto;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    opacity: 0.85;
+    /* background-image: url(../img/navbg.jpg); */
+    /* THE RIGHT WAY TO INCLUDE BACKGROUND IMAGE "../" NECESARY */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    /* we have to target "A" inside ul li, if done above, no change in decoration */
+    padding: 10px 10px;
+    margin: 10px 10px;
+    color: white;
+    display: block;
+    /* so that we can fix width and shit */
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 100px;
+}
+
+#navbar #searchbar
+{
+    margin-right: 40px;
+    padding: 5px 10px;
+    border-radius: 200px;
+    width: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TITLE / HOME SECTION */
+#title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    margin: 0px 50px;
+}
+#title::before {
+    content: "";
+    background: url(../img/bg.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 85vh;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* YOU CAN MAKE UTILITY CLASSES ALSO LIKE "PRIMARYHEADING" SO THAT ALL PRIMARY HEADINGS OF SITE CUSTOMISE TOGETHER */
+
+.primary-h1{
+    font-family: 'Oleo Script Swash Caps','Poppins';
+    text-shadow: 2px 2px white;
+}
+#title #maintitle
+{
+    font-size: 5rem;
+    padding-top: 100px;
+}
+#title #subtitle
+{
+    font-size: 3rem;
+    padding: 50px;
+}
+
+#title .btn {
+    margin: 40px 10px;
+    font-size: 1.2rem;
+    padding: 10px 10px;
+    border-radius: 200px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;    /* necessary */
+    background-color: black;
+    color: white;
+}
+
+#title .btn:hover {
+    color: black;
+    background-color: white;
+}
+
+/* SERVICES */
+#services
+{
+    display: flex;
+}
+.services-container::before
+{
+    content: "";
+    background-image: url(../img/servicesbg.jpg);
+    opacity: 0.85;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    margin-top: 15px;
+}
+#services .box
+{   
+    background-color: black;
+    color: white;
+    margin: 30px;
+    padding: 20px;
+    width: 30%;
+    border: 2px solid white;
+    text-align: center;
+}
+#primary-services
+{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 50px;
+}
+#services .box img
+{
+    width: 100%;
+}
