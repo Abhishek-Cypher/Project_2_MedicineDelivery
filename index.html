@@ -7,7 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomeMeds.com</title>
     <!-- INCLUDING EXTERNAL CSS FILE TO THIS HTML -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 800px)" href="css/phone.css">
+    <!-- NOW WHEN SCREEN WIDTH LESS THAN 800px,(SINCE AT LESS
+        THAN 1250PX, ELEMENTS DISTURBED) NEW CSS FILE WILL APPLY. (SUITABLE FOR PHONES) -->
+
     <!-- FONTS -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
@@ -20,27 +24,31 @@
         </div>
         <ul>
             <li class="item"><a href="#">Home</a></li>
-            <li class="item"><a href="#">About us</a></li>
-            <li class="item"><a href="#">Services</a></li>
-            <li class="item"><a href="#">Contact us</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>    
+            <li class="item"><a href="#providers-container">Resource Providers</a></li>
+            <li class="item"><a href="#contact-us">Contact us</a></li>
+            <!-- TO REACH A PARTICULAR SECTION OF A PAGE, USE #section-id IN ANCHOR -->
         </ul>
         <input type="text" id="searchbar" placeholder="Search">
     </nav>
 
-    <section id="title">
-        <h1 id="maintitle" class="primary-h1">
-            HOMEMEDS.com
-        </h1>
-        <h1 id="subtitle" class="primary-h1">
-            Now order Medicines from the comfort of your Home!
-        </h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi odio possimus maxime voluptas labore
-            nulla quos ducimus officiis harum reiciendis neque molestiae eos, cupiditate itaque nemo est? Facere,
-            necessitatibus consequatur a officiis alias minus architecto perspiciatis? Odit error, ad fugiat totam enim
-            ipsum atque, nulla aut dolorum asperiores aspernatur!</p>
-        <button class="btn">Order Now</button>
+    <section id="title-container">
+        <div id="title">
+            <h1 id="maintitle" class="primary-h1">
+                HOMEMEDS.com
+            </h1>
+            <h1 id="subtitle" class="primary-h1">
+                Now order Medicines from the comfort of your Home!
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit sequi odio possimus maxime voluptas labore
+                nulla quos ducimus officiis harum reiciendis neque molestiae eos, cupiditate itaque nemo est? Facere,
+                necessitatibus consequatur a officiis alias minus architecto perspiciatis? Odit error, ad fugiat totam enim
+                ipsum atque, nulla aut dolorum asperiores aspernatur!</p>
+                <button class="btn">Order Now</button>
+        </div>
     </section>
-    <section class="services-container">
+
+    <section id="services-container">
         <h1 id="primary-services" class="primary-h1">Our Services</h1>
         <div id="services">
             <div class="box">
@@ -70,9 +78,10 @@
             </div>
         </div>
     </section>
+
     <section id="providers-container">
-        <h1 class="primary-h1" id="providers-title">Our Resources Providers</h1>
-        <div id="provider-images">
+        <h1 class="primary-h1" id="providers-title">Our Resource Providers</h1>
+        <div id="providers-images">
             <img src="provider1.png" alt="" class="providers">
             <img src="provider2.png" alt="" class="providers">
             <img src="provider3.png" alt="" class="providers">
