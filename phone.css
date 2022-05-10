@@ -1,0 +1,36 @@
+:root{
+    font-size: 10px;
+    /* SINCE REM IS RELATIVE TO ROOT */
+}
+
+/* Navigation */
+#navbar{
+    flex-direction: column;
+}
+#navbar #searchbar{
+    display: none;
+}
+#navbar ul{
+    width: auto;
+}
+#navbar::before
+{
+    height: 100%;
+    background-color: black;
+    opacity: 0.85;
+}
+
+/* Services section  */
+#services{
+    flex-direction: column;
+}
+#services .box
+{
+    width: auto;
+}
+
+/* Providers section */
+#providers-images{
+    flex-wrap: wrap;
+    height: auto;
+}
